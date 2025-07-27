@@ -58,5 +58,5 @@ Também acessei o arquivo /routes/web.php -> onde mais para frente estarei contr
 
 # DAY 2 :
 
-Aguardando....
+Aguardando.....
 
