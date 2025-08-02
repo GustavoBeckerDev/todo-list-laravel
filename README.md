@@ -58,5 +58,26 @@ Também acessei o arquivo /routes/web.php -> onde mais para frente estarei contr
 
 # DAY 2 :
 
-Aguardando.....
+* Trabalhei na criação da view create-account.blade.php.
+* Essa view era muito parecida com a home, eu manti o layout original, trazendo o header com os btn's
+* E modifiquei o conteúdo do @section('content')
+* Nesse content trabalhei com a criação de divs, uma delas continha um formulário.
+* Fiz toda a estilização da view create-account, e criei a rota necessária para enviar para essa view.
+* Também já criei as rotas para a página de Login e a para após enviar o formulário, só ainda não foram trabalhadas.
+
+* Aprendi de uma forma diferente como usar o component button:
+<img width="580" height="116" alt="image" src="https://github.com/user-attachments/assets/6b9335aa-7e8e-45a0-b7a5-1be08a8b81f1" />
+<img width="848" height="45" alt="image" src="https://github.com/user-attachments/assets/32b3f065-330f-4e92-8db7-01fa97c9e1b2" />
+
+Dessa forma meu código fica mais limpo e utilizo a variável $slot para acessar o valor dentro dos buttons (escritas utilizadas).
+
+* Estou aprendendo a reutilizar o meu código utilizando os components e os layouts, tornando a criação das outras páginas da aplicação muito mais leve, e de forma rápida e eficiente.
+* Também estou aprendendo a criar as rotas porém ainda sem validação.
+* O próximo passo é criar a view Login e as autenticações necessárias para a validação do usuário na requisição de cada rota.
+
+# DAY 3 :
+
+... 
+
+
 
