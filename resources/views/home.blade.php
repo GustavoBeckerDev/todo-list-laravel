@@ -9,7 +9,7 @@
         todas as tarefas do seu dia de forma gratuita.
         </p>
 
-        @include('components.button', ['text' => 'COMEÇE AGORA !!!', 'class' => 'btn_login'])
+        <x-button class='btn_login' linkto='create-account'>Começar hoje mesmo!</x-button>
 
     </section>
     

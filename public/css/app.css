@@ -17,7 +17,8 @@
 /* ESTILIZAÇÕES DO HEADER */
 
 header,
-section.home_pg {
+section.home_pg,
+section.form_pg {
     padding: 0 15px;
 }
 
@@ -47,16 +48,22 @@ header .header-esquerda > i:hover {
     transform: scale(1.2);
 }
 
+header .header-direita {
+    display: flex;
+    gap: 10px;
+}
+
 button {
     border: 1px solid var(--c-color);
     border-radius: 5px;
-    padding: 7.5px 15px;
+    padding: 10px 15px;
     color: var(--c-color);
     background-color: transparent;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     opacity: .75;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -70,20 +77,83 @@ button:hover {
     color: var(--a-color);
     opacity: .75;
 }
+
+.btn_fullwidth {
+    width: 100%;
+}
+
 .btn_login:hover {
     opacity: 1;
 }
 
 /* ESTILIZAÇÕES DO CONTENT */
 
-section.home_pg {
+section.home_pg,
+section.form_pg {
     background: linear-gradient(to bottom, var(--a-color), var(--b-color));
     width: 100vw;
     height: calc(100vh - 80px);
+}
+
+section.home_pg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+section.form_pg{
+    padding-top: 60px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.form_pg div.form_left{
+    width: 60%;
+}
+section.form_pg div.form_right{
+    width: 40%;
+    background-color: var(--b-color);
+    border: 1px solid var(--f-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+section.form_pg div.form_right form {
+    display: flex;
+    flex-direction: column;
+}
+
+div.form_right form input {
+    background: var(--g-color);
+    border: 1px solid var(--f-color);
+    border-radius: 4px;
+    color: var(--e-color);
+    padding: 15px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+div.form_right form span {
+    color: var(--e-color);
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+div.form_right form span a {
+    color: var(--c-color);
+    text-decoration: none;
+}
+
+div.form_right form span a:hover {
+    text-decoration: underline;
+}
+
+div.form_right form input:focus {
+    outline: none;
+    background: var(--f-color);
 }
 
 h1.title {
@@ -96,6 +166,16 @@ h1.title > span {
     color: var(--c-color);
 }
 
+section.home_pg h1.title,
+section.home_pg p.subtitle{
+    text-align: center;
+}
+
+section.form_pg, h1.title,
+section.form_pg, p.subtitle{
+    text-align: left !important;
+}
+
 p.subtitle {
     color: var(--e-color);
     font-size: 18px;
@@ -103,16 +183,12 @@ p.subtitle {
     margin-bottom: 50px;
 }
 
-section.home_pg br {
-    display: none;
-}
-
-
 /* AQUI SERÁ A RESPONSIVIDADE PARA DISPOSITIVOS MAIORES */
 
 @media (min-width: 900px) {
     header,
-    section.home_pg {
+    section.home_pg,
+    section.form_pg {
         padding: 0px 60px;
     }
 
@@ -131,7 +207,8 @@ section.home_pg br {
 
 @media (min-width: 1200px) {
     header,
-    section.home_pg {
+    section.home_pg,
+    section.form_pg {
         padding: 0px 120px;
     }
 
