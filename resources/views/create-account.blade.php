@@ -16,7 +16,10 @@
 
                 <span>Já tem uma conta? <a href="{{route('login')}}" linkto='login'>Entrar</a></span>
 
-                <x-button class='btn_fullwidth' linkto='insert-account'>Criar Nova Conta</x-button>
+                <x-button class='btn_fullwidth' linkto='insert-account'>
+                    Criar Nova Conta
+                <x-sui-create />
+                </x-button>
             </form>
         </div>
     </section>
