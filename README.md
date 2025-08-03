@@ -108,6 +108,27 @@ Dessa forma meu código fica mais limpo e utilizo a variável $slot para acessar
 
 <img width="787" height="240" alt="image" src="https://github.com/user-attachments/assets/6374e1f5-473c-4adc-9bb0-a67f332c035e"/>
 
+# DAY 5 :
+
+Nesta etapa da aplicação, estou criando os tratamentos de erros e estilizando no frontend, com mensagem intuitivas para o usuário saber o que aconteceu ao se deparar com erro na criação da conta.
+
+* Foi feito o tratamento de erros ao cadastrar um usuário sem os campos corretos.
+* Criei uma mensagem de erro para cada campo (nome, email, senha)
+* Criei uma TRAIT com a function validatePassword() verificando se a password tem letras maíusculas, minúsculas, numeros e chars especiais.
+  
+  <img width="1242" height="555" alt="image" src="https://github.com/user-attachments/assets/d6467ab7-eb0c-4286-9eae-93d6ead4f436" />
+
+* A validação da senha é feita no trait mas é chamada no UserController, se for tudo ok, o usuário é cadastrado no banco de dados.
+
+  <img width="721" height="548" alt="image" src="https://github.com/user-attachments/assets/c64aef3a-b8d7-4d16-a763-ce6a153be522" />
+
+* Tratamento de erro da senha no front utilizando classe para ser customizada no app.css :
+
+<img width="1190" height="115" alt="image" src="https://github.com/user-attachments/assets/83d85856-662a-4a45-8327-d10c4cb76bb5" />
+
+
+
+
 
 
 
