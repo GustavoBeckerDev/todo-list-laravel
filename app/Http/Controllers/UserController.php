@@ -33,7 +33,7 @@ class UserController extends Controller
         $validated = $request->validate([
             'name' => 'required|min:2|max:200', 
             'email' => 'required|min:5|max:200|email|unique:users',
-            'password' => 'required|min:2|max:200'
+            'password' => 'required|min:7|max:300'
         ]);
 
         $strongPassword = $user->validatePassword($validated['password']);
@@ -42,7 +42,7 @@ class UserController extends Controller
         try {
             
             $user = $user->fill($validated);
-            $user->password = Hash::make($validated['password']);
+            $user->password = Hash::make($strongPassword);
             $user->save();
             return back()->with('status', 'Conta criada com sucesso.');
 
