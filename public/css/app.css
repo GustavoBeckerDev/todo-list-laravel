@@ -13,6 +13,8 @@
     --e-color: #777777;
     --f-color: #333333;
     --g-color: #222222;
+    --h-color: #ff0000;
+    --i-color: #008000;
 }
 /* ESTILIZAÇÕES DO HEADER */
 
@@ -165,6 +167,25 @@ div.form_right form span a:hover {
 div.form_right form input:focus {
     outline: none;
     background: var(--f-color);
+}
+
+div.form_right form input.field_error {
+    border: 1px solid var(--h-color);
+}
+
+p.field_error {
+    color: var(--h-color);
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+div.form_right form span.txt_success {
+    color: var(--i-color);
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0 5px 0;
+    padding: 5px;
 }
 
 h1.title {

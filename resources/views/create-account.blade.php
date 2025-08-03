@@ -11,21 +11,21 @@
         <div class="form_right">
             <form method="POST" action="{{route('insert-account')}}">
 
+                @error('name')
+                    <p class="field_error">{{ $message }}</p>
+                @enderror
                 @csrf
                 <input type="text" name="name" placeholder='Seu nome' value="{{old('name')}}" class="@error('name') field_error @enderror"/>
-                @error('name')
-                    <p>{{ $message }}</p>
-                @enderror
 
-                <input type="email" name="email" placeholder="Seu email" value="{{old('email')}}"/>
                 @error('email')
-                    <p>{{ $message }}</p>
+                    <p class="field_error">{{ $message }}</p>
                 @enderror
+                <input type="email" name="email" placeholder="Seu email" value="{{old('email')}}" class="@error('email') field_error @enderror"/>
 
-                <input type="password" name="password" placeholder="Sua senha" value="{{old('password')}}"/>
                 @error('password')
-                    <p>{{ $message }}</p>
+                    <p class="field_error">{{ $message }}</p>
                 @enderror
+                <input type="password" name="password" placeholder="Sua senha" class="@error('password') field_error @enderror"/>
 
                 <span>Já tem uma conta? <a href="{{route('login')}}" linkto='login'>Entrar</a></span>
 
@@ -33,6 +33,10 @@
                     Criar Nova Conta
                 <x-sui-create />
                 </x-button>
+
+                @if (@session('status'))
+                    <span class="txt_success">{{ session('status')}}</span>
+                @endif
 
             </form>
         </div>
