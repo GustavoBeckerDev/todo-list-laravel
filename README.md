@@ -93,7 +93,7 @@ Dessa forma meu código fica mais limpo e utilizo a variável $slot para acessar
 
 <img width="601" height="485" alt="image" src="https://github.com/user-attachments/assets/c435c96a-8627-4824-a68b-ec99ad661777"/>
 
-# DAY 3 :
+# DAY 4 :
 
 * Trabalhei bastante no UserController para validar a criação de usuário, trabalhando com tratativas de erros
 * Como mostrar mensagems intuitias aos usuários (mensagens ainda não personalizadas) :
