@@ -1,4 +1,4 @@
-# GUSTAVO TOODO-LIST-LARAVEL
+# GUSTAVO TODO-LIST-LARAVEL
 
 Neste projeto estarei aplicando os conhecimentos obtidos durante meus estudos autodidata em Laravel 
 na parte de FRONT-END e BACK-END.
