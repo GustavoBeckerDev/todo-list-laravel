@@ -77,7 +77,25 @@ Dessa forma meu código fica mais limpo e utilizo a variável $slot para acessar
 
 # DAY 3 :
 
-... 
+* Trabalhei na criação da VIEW login.blade.php
+* Essa view era muito parecida com a create-account, eu manti o layout original, modificando os textos e os inputs.
+* Fiz toda a estilização da view login, e criei a rota necessária para enviar para essa view e também já criei a rota para entrar na aplicação porém ainda não autenticada.
+* Aprendi a utilizar a biblioteca de icons do tailwind instalando as dependências e utilizando no projeto.
+* Criei as migrations rodando o comando : php artisan migrate
+* Criei um Seed chamada UserSeeder para popular a minha tabela Users criada com as migrates (table já padrão no projeto Laravel)
+* Aprendi a utilizar o Hash na senha no Laravel, instalando o pacote de Hash que utiliza por padrão o BCRYPT como criptografia de senhas.
+
+=> Segue alguns prints do que fiz nesse dia de produção: 
+
+<img width="964" height="617" alt="image" src="https://github.com/user-attachments/assets/01901249-f994-438e-927e-b52096655e4c" />
+
+<img width="734" height="796" alt="image" src="https://github.com/user-attachments/assets/3754b2ae-75bc-41df-b669-730589107dd2" />
+
+<img width="601" height="485" alt="image" src="https://github.com/user-attachments/assets/c435c96a-8627-4824-a68b-ec99ad661777" />
+
+
+
+
 
 
 
