@@ -2,8 +2,7 @@
 
     <div class="header-esquerda">
         <a href="{{route('home')}}">
-        {{-- <i class="fa-solid fa-list-check fa-2xl" style="color: #ad60cd;"></i> --}}
-            <img src="{{ asset('imgs/list.png')}}" alt="">
+            <img src="{{ asset('imgs/list.png')}}" alt="List">
         </a>
     </div>
 

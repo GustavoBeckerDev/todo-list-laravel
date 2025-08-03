@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // ROTA DA PÁGINA INICIAL DA APLICAÇÃO (HOME)
@@ -8,14 +9,15 @@ Route::get('/', function () {
 })->name('home');
 
 // ROTA PARA QUE LEVA PARA A PÁGINA DE CRIAR CONTA
-Route::get('/criar-conta', function () {
-    return view('create-account');
-})->name('create-account');
+Route::get('/criar-conta', 
+[UserController::class, 'create']
+)->name('create-account');
 
 // ROTA A DEFINIR APÓS O USUÁRIO ENVIAR A REQUISIÇÃO APÓS CRIAR A CONTA
-Route::post('/criar-conta', function () {
-    return 'VALIDAÇÃO E INSERÇÃO DE USUÁRIO';
-})->name('insert-account');
+Route::post('/criar-conta', 
+[UserController::class, 'store']
+)->name('insert-account');
+
 
 
 

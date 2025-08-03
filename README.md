@@ -80,18 +80,37 @@ Dessa forma meu código fica mais limpo e utilizo a variável $slot para acessar
 * Trabalhei na criação da VIEW login.blade.php
 * Essa view era muito parecida com a create-account, eu manti o layout original, modificando os textos e os inputs.
 * Fiz toda a estilização da view login, e criei a rota necessária para enviar para essa view e também já criei a rota para entrar na aplicação porém ainda não autenticada.
-* Aprendi a utilizar a biblioteca de icons do tailwind instalando as dependências e utilizando no projeto.
+* Aprendi a utilizar a biblioteca de icons do laravel instalando as dependências e utilizando no projeto.
 * Criei as migrations rodando o comando : php artisan migrate
 * Criei um Seed chamada UserSeeder para popular a minha tabela Users criada com as migrates (table já padrão no projeto Laravel)
 * Aprendi a utilizar o Hash na senha no Laravel, instalando o pacote de Hash que utiliza por padrão o BCRYPT como criptografia de senhas.
 
 => Segue alguns prints do que fiz nesse dia de produção: 
 
-<img width="964" height="617" alt="image" src="https://github.com/user-attachments/assets/01901249-f994-438e-927e-b52096655e4c" />
+<img width="964" height="617" alt="image" src="https://github.com/user-attachments/assets/01901249-f994-438e-927e-b52096655e4c"/>
 
-<img width="734" height="796" alt="image" src="https://github.com/user-attachments/assets/3754b2ae-75bc-41df-b669-730589107dd2" />
+<img width="734" height="796" alt="image" src="https://github.com/user-attachments/assets/3754b2ae-75bc-41df-b669-730589107dd2"/>
 
-<img width="601" height="485" alt="image" src="https://github.com/user-attachments/assets/c435c96a-8627-4824-a68b-ec99ad661777" />
+<img width="601" height="485" alt="image" src="https://github.com/user-attachments/assets/c435c96a-8627-4824-a68b-ec99ad661777"/>
+
+# DAY 3 :
+
+* Trabalhei bastante no UserController para validar a criação de usuário, trabalhando com tratativas de erros
+* Como mostrar mensagems intuitias aos usuários (mensagens ainda não personalizadas) :
+
+<img width="625" height="543" alt="image" src="https://github.com/user-attachments/assets/ca7d00ea-31ed-4e73-9efd-59696ad30e2b"/>
+
+<img width="695" height="635" alt="image" src="https://github.com/user-attachments/assets/183e4afd-bb44-4155-ada0-57433a3e3352"/>
+
+* Obs.: Ainda não defini a rota que será depois de criar a conta, por isso o return('USUARIO CADASTRADO COM SUCESSO')
+* Tambei já deixei pronta a inserção de usuários na tabela users pelo formulário, inserção conferida no phpMyAdmin
+* Aprendi a utilizar o controller na chamada de Routes, para validar essa chamada lá pela Controller no caso a UserController :
+
+<img width="787" height="240" alt="image" src="https://github.com/user-attachments/assets/6374e1f5-473c-4adc-9bb0-a67f332c035e"/>
+
+
+
+
 
 
 
